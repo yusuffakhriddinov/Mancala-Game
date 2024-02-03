@@ -52,7 +52,7 @@ int main() {
         
         
         if (rooms[current] == 1 && current != 4) { // Losing condition based on the last seed's placement.
-            printf("You lost because the last counter fell into section %d\n.", current + 1); // Adjust for 1-based indexing in user display.
+            printf("You lost because the last counter fell into section %d.\n", current + 1); // Adjust for 1-based indexing in user display.
             break;
         } else if (next != 0) {
             printf("Last piece landed in section %d. Continue sowing seeds!\n", current + 1); // Inform the player about the next move.
